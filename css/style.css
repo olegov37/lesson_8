@@ -1,0 +1,361 @@
+@import "null.css";
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,italic,500,700&display=swap");
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	background-color: rgb(66, 70, 70);
+}
+
+.conteiner {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: aliceblue;
+}
+
+/* ====================================================================================== */
+
+.date-time {
+	color: #8B9193FF;
+	margin: 0 0 20px 20px;
+}
+.date {
+	/* display: inline-block; */
+}
+.date:hover {
+	background-color: aqua;
+	border: 1px dotted black;
+	border-radius: 4px;
+}
+.date::before {
+	content: "";
+	background: url("../img/date_time/Vector_Stroke.svg") 0 0 no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0 5px 0 0;
+}
+.time {
+	/* display: inline-block; */
+	margin: 0 0 0 25px;
+}
+.time:hover {
+	background-color: aqua;
+	border: 1px dotted black;
+	border-radius: 4px;
+}
+.time::before {
+	content: "";
+	background: url("../img/date_time/Union.svg") 0 0 no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0 5px 0 0;
+}
+
+/* =========================================================================================== */
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 1.2;
+	max-width: fit-content;
+	margin: 0 auto 20px;
+}
+h1:hover { 
+	font-style:normal;
+	background-color: blueviolet;
+}
+
+/* ============================================================================================ */
+
+.text-about {
+	text-align: justify;
+	padding: 0 20px;
+	text-indent: 10px;
+	line-height: 1.5;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.text-about p:hover {
+	border: 3px solid red;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px green, inset 0 0 10px 0 black;
+	background-color: coral;
+	color: blue;
+	font-style: italic;
+}
+.text-about *:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+
+/* ============================================================================================ */
+
+.scientific-sites {
+	padding: 0 20px;
+	text-align: justify;
+	text-indent: 10px;
+	line-height: 1.3;
+	font-size: 18px;
+}
+/* ===================== */
+h2 {
+	font-weight: 500;
+	font-size: 25px;
+	color: brown;
+	line-height: 1.4;
+	text-align: center;
+	margin-bottom: 15px;
+	max-width: fit-content;
+	margin: 0 auto 15px;
+}
+
+h2:hover {
+	text-shadow: 3px 3px 6px black;
+}
+/* ================================== */
+.khan {
+	margin-bottom: 20px;
+}
+
+.khan *:not(:last-child){
+	margin-bottom: 20px;
+}
+.khan p:nth-child(2) {
+	background-color: cornflowerblue;
+}
+.khan p:nth-child(odd) {
+	background-color: darkgreen;
+}
+.khan p::first-line {
+	color: gold;
+}
+.khan p::first-letter {
+	font-style: italic;
+	color: maroon;
+}
+.khan p::after {
+	content: "";
+	background: url("../img/logo-ed.svg") 0 0 / 80px no-repeat;
+	display: inline-block;
+	height: 20px;
+	width: 100px;
+	margin-left: 10px;
+}
+
+.khan-link:hover {
+	color: brown;
+	text-decoration: underline;
+}
+/* =================================================================== */
+.difference {
+	background: rgb(202, 227, 177);
+	margin-bottom: 20px;
+}
+
+.difference *:not(ul) {
+	margin-bottom: 15px;
+}
+
+.difference p:hover {
+	background: url("../img/logo-ed.svg") 0 0 / cover no-repeat;
+	color: rgb(6, 70, 70);
+}
+
+.difference-link:hover {
+	color: blueviolet;
+	text-decoration: underline;
+	box-shadow: 0 0 5px 0 black;
+	border-radius: 3px;
+	background-color: aqua;
+}
+
+/* ================================= */
+.en-list li:last-child {
+	margin-bottom: 0px;
+}
+
+.en-list {
+	background: rgb(135, 222, 138);
+	text-indent: -10px;
+	padding: 10px;
+}
+.en-list li {
+	color: crimson;
+	font-style: italic;
+	font-size: 18px;
+	font-weight: 500;
+	padding-left: 30px;
+	
+}
+.en-list li:hover {
+	color: rgb(92, 42, 52);
+	font-style: normal;
+	background-color: darkorange;
+}
+.en-list li:hover:nth-child(odd) {
+	background-color: aqua;
+}
+.difference li::before {
+	content: "";
+	background: url("../img/Vector.svg") 0 0 no-repeat;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	margin: 0 10px 0 -18px;
+	transition: all 0.3s ease 0s;
+}
+.difference li:hover::before {
+	transform: rotate(360deg) scale(1.3);
+}
+/* ================================== */
+.ru-list {
+	background: gray;
+	text-indent: -10px;
+	padding: 10px;
+}
+.ru-list li {
+	padding-left: 30px;
+}
+.ru-list li:hover:nth-child(3){
+	color: rgb(52, 13, 130);
+	background: navajowhite;
+	font-weight: 500;
+}
+.ru-list:hover li:first-of-type {
+	visibility: hidden;
+}
+.ru-list li:last-of-type {
+	margin-bottom: 0px;
+}
+
+/* ============================================================================== */
+
+.online-simulator {
+	background: lightskyblue;
+	border-left: 3px green solid;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+.online-simulator *:not(ol, .top-links) {
+	margin-bottom: 10px;
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 500;
+	color: firebrick;
+}
+
+.top-links li:last-of-type {
+	margin-bottom: 0px;
+} 
+
+.top-links li:nth-child(even) {
+	background-color: lightseagreen;
+}
+
+.top-links li:nth-child(1),
+.top-links li:nth-child(3),
+.top-links li:nth-child(5) {
+	background-color: rgb(53, 118, 114);
+}
+
+li [class*="-link"] {
+	color: rgb(33, 69, 179);
+	font-size: 18px;
+	font-weight: 500;
+}
+/* ================================= */
+.num-list {
+	counter-reset: item;
+}
+.num-list li::before {
+	counter-increment: item;
+	content: "(" counter(item) ")";
+	margin: 0px 10px 0px 0px;
+	color: rgb(96, 31, 78);
+	font-size: 20px;
+}
+/* ==================================== */
+
+li [class*="-link"]:hover {
+	color: red;
+	font-style: italic;
+	text-decoration: underline;
+	background-color: darkgrey;
+	letter-spacing: 2px;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+li [class*="-link"]:active{
+	box-shadow: inset 0 0px 10px 0 #000;
+}
+
+
+/* ================================================================================= */
+
+.dynoro {
+	min-height: 220px;
+	background: url(../img/bg_song/1802_default_300x190.jpg) 0 0 / 100% 100% no-repeat;
+	border: #000 solid 3px;
+	border-radius: 10px;
+	box-shadow: inset 0 0 20px 0 blue;
+	margin-bottom: 20px;
+}
+.dynoro-song-link {
+	display: inline-block;
+	color: rgb(255, 0, 132);
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.dynoro-song-link:hover {
+	text-decoration: underline;
+}
+
+.dynoro-song-link:active {
+	color: coral;
+}
+
+.dynoro-song-link:focus {
+	border: dotted 2px yellow	;
+}
+
+/* ====================================================================================== */
+
+.fig {
+	text-align: center;
+}
+
+.figma-link {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1.5;
+	color:firebrick;
+	border: #000 solid 2px;
+	border-radius: 5px; 
+	padding: 5px;
+	background: radial-gradient(circle, rgba(50,50,221,0.989233193277311) 0%, rgba(0,212,255,1) 100%);
+}
+
+.figma-link:focus {
+	border: red dashed 4px;
+}
+
+.figma-link:active {
+	color: lime;
+	text-decoration: underline;
+}
